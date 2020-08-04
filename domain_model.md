@@ -1,8 +1,8 @@
 Objects | Messages
 ________|_________
-Person|rent_bike
-Bike| bike_working
-Docking Station | bike_release
+Person|
+Bike| working?
+Docking Station | release_bike
 
 ## Diagram of Object and Message Interactions ##
 
