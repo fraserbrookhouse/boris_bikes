@@ -21,7 +21,11 @@ Rspec
 
 ## Tests ##
 
-Tests are made using the rspec ruby gem. Run 'rspec' in your terminal when inside the 'boris_bikes' directory to use them.
+Tests are made using the rspec ruby gem. 
+
+First install rspec by running this in your terminal: 'gem install rspec'  
+
+Run 'rspec' in your terminal when inside the 'boris_bikes' directory to use them.
 
 ## How to Use? ##
 
