@@ -13,15 +13,15 @@ class DockingStation
 	def dock(bike)
 		fail 'Dock is full' if self.full?
 		@available_bikes.append(bike)
-		@available_bikes[@available_bikes.count]
+		@available_bikes[@available_bikes.length - 1]
 	end
 	#returns value of already docked bike
 	attr_reader :available_bikes
 
 	private
 	def full?
-		if @available_bikes.count 
-			>= DEFAULT_CAPACITY
+		if @available_bikes.length 
+			== DEFAULT_CAPACITY
 			true
 		else
 			false
