@@ -7,6 +7,7 @@ class DockingStation
 	end
 	#takes in a bike and docks it
 	def dock(bike)
+		fail 'Dock is full' unless !@bike
 		@bike = bike
 	end
 	#returns value of already docked bike
