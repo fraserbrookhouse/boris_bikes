@@ -1,8 +1,8 @@
 # an object that can take in, and give out bikes to people.
 class DockingStation
+	DEFAULT_CAPACITY = 20
 	def initialize
 		@available_bikes = []
-		@dock_capacity = 20
 	end
 	#releases bikes
 	def release_bike
@@ -13,14 +13,15 @@ class DockingStation
 	def dock(bike)
 		fail 'Dock is full' if self.full?
 		@available_bikes.append(bike)
-		@available_bikes[@available_bikes.length - 1]
+		@available_bikes[@available_bikes.count]
 	end
 	#returns value of already docked bike
 	attr_reader :available_bikes
 
 	private
 	def full?
-		if @available_bikes.length == @dock_capacity
+		if @available_bikes.count 
+			>= DEFAULT_CAPACITY
 			true
 		else
 			false
