@@ -2,6 +2,7 @@
 class DockingStation
 	#releases bikes
 	def release_bike
+		fail 'No bikes available' unless @bike
 		@bike
 	end
 	#takes in a bike and docks it
