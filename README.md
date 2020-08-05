@@ -12,7 +12,7 @@ This project is a first foray into developing with ruby, the motivation behind i
 
 ## Tech/Framework Used ##
 
-Ruby
+Ruby  
 Rspec
 
 ## Features ##
@@ -27,5 +27,5 @@ Tests are made using the rspec ruby gem. Run 'rspec' in your terminal when insid
 
 ## Credit ##
 
-Fraser Brookhouse
+Fraser Brookhouse  
 Michael Groves
