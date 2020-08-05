@@ -20,12 +20,7 @@ class DockingStation
 
 	private
 	def full?
-		if @available_bikes.length 
-			== DEFAULT_CAPACITY
-			true
-		else
-			false
-		end
+		@available_bikes.count >= DEFAULT_CAPACITY
 	end
 
 	private
