@@ -2,13 +2,13 @@
 class DockingStation
 	#releases bikes
 	def release_bike
-		Bike.new
+		@bike
 	end
 	#takes in a bike and docks it
 	def dock(bike)
 		@bike = bike
 	end
-	#gives out an already docked bike
+	#returns value of already docked bike
 	attr_reader :bike
 
 end
