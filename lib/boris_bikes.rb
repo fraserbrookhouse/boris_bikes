@@ -1,7 +1,7 @@
 # an object that can take in, and give out bikes to people.
 class DockingStation
 	DEFAULT_CAPACITY = 20
-	def initialize(capacity:20)
+	def initialize(capacity = DEFAULT_CAPACITY)
 		@capacity = capacity
 		@available_bikes = []
 	end
@@ -21,7 +21,7 @@ class DockingStation
 
 	private
 	def full?
-		@available_bikes.count >= DEFAULT_CAPACITY
+		@available_bikes.count >= @capacity
 	end
 
 	private
